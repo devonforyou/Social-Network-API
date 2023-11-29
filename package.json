@@ -1,19 +1,22 @@
 {
-    "name": "No-SQL",
+    "name": "no-sql",
     "version": "1.0.1",
     "description": "Mongoose back-end project - Main",
-    "main": "index.js",
+    "main": "server.js",
     "license": "MIT",
+    "engines": {
+        "node": "20.8.0"
+      },
     "scripts": {
-        "start": "node index",
-        "dev": "nodemon index",
-        "seed": "node utils/seed",
-        "heroku-postbuild": "node utils/seed.js"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js",
+        "dev": "nodemon server.js",
+        "seed": "node seeds/seed.js"
     },
     "dependencies": {
         "express": "^4.17.1",
         "moment": "^2.29.1",
-        "mongodb": "^6.2.0",
+        "validator": "^13.11.0",
         "mongoose": "^7.0.2"
     },
     "devDependencies": {
